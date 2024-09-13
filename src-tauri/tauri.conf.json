@@ -1,0 +1,47 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "toss-cert-client",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "토스증권 (비공식)",
+        "width": 1366,
+        "height": 960
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "page.univdev.tosscertclient",
+      "icon": [
+        "icons/toss_icon_mac.icns",
+        "icons/toss-icon.ico"
+      ],
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": null,
+        "frameworks": [],
+        "minimumSystemVersion": null,
+        "signingIdentity": null
+      }
+    }
+  }
+}
