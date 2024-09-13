@@ -2,7 +2,8 @@
   "name": "toss-cert-client",
   "private": true,
   "scripts": {
-    "start": "turbo start"
+    "start": "turbo start",
+    "dist": "turbo dist"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
